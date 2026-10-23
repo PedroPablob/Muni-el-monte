@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Municipalidad El Monte</title>
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilos única -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra flotante de accesibilidad -->
+    <aside class="accessibility-widget" aria-label="Herramientas de accesibilidad">
+        <button type="button" class="accessibility-toggle" id="accessibility-toggle" aria-label="Abrir herramientas de accesibilidad" aria-expanded="false" aria-controls="accessibility-panel">
+            <span aria-hidden="true">♿</span>
+        </button>
+        <div class="accessibility-panel" id="accessibility-panel" hidden>
+            <div class="accessibility-panel-header">
+                <span>Accesibilidad</span>
+                <button type="button" class="accessibility-close" id="accessibility-close" aria-label="Cerrar herramientas de accesibilidad">×</button>
+            </div>
+            <div class="accessibility-controls">
+                <div class="accessibility-control-group">
+                    <span class="accessibility-control-label">Tamaño del texto</span>
+                    <div class="accessibility-text-buttons">
+                        <button type="button" class="accessibility-action" id="font-decrease">A−</button>
+                        <button type="button" class="accessibility-action" id="font-reset">A</button>
+                        <button type="button" class="accessibility-action" id="font-increase">A+</button>
+                    </div>
+                </div>
+                <button type="button" class="accessibility-option" id="contrast-toggle" aria-pressed="false">
+                    <span aria-hidden="true">◐</span> Alto contraste
+                </button>
+                <button type="button" class="accessibility-option" id="links-toggle" aria-pressed="false">
+                    <span aria-hidden="true">Aa</span> Subrayar enlaces
+                </button>
+                <button type="button" class="accessibility-reset" id="accessibility-reset">
+                    Restablecer ajustes
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- =========================================
+        BARRA SUPERIOR DE SERVICIOS
+    ========================================= -->
+    <div class="utility-bar">
+        <div class="utility-bar-inner">
+            <!-- Redes sociales -->
+            <div class="social-links" aria-label="Redes sociales municipales">
+                <a href="#" aria-label="Facebook de la Municipalidad">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1z"/></svg>
+                </a>
+                <a href="#" aria-label="Instagram de la Municipalidad">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                </a>
+                <a href="#" aria-label="YouTube de la Municipalidad">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.5a3 3 0 0 0-2.1-2.1C17.1 5 12 5 12 5s-5.1 0-6.9.4A3 3 0 0 0 3 7.5C2.6 9.3 2.6 12 2.6 12s0 2.7.4 4.5a3 3 0 0 0 2.1 2.1c1.8.4 6.9.4 6.9.4s5.1 0 6.9-.4a3 3 0 0 0 2.1-2.1c.4-1.8.4-4.5.4-4.5s0-2.7-.4-4.5z"/><path class="social-play" d="M10 9l5 3-5 3z"/></svg>
+                </a>
+                <a href="#" aria-label="X de la Municipalidad">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4l5.5 7.3L5.3 20H8l3.8-6.2L16.5 20H20l-6.2-8.2L18.5 4h-2.7l-3.3 5.3L8.5 4z"/></svg>
+                </a>
+            </div>
+            <!-- Accesos de transparencia -->
+            <nav class="utility-links" aria-label="Accesos de transparencia">
+                <a href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU084" target="_blank" rel="noopener noreferrer">
+                    <span>Transparencia Activa</span><small>Ley de Transparencia</small>
+                </a>
+                <a href="https://www.portaltransparencia.cl/PortalPdT/web/guest/directorio-de-organismos-regulados?p_p_id=pdtorganismos_WAR_pdtorganismosportlet&orgcode=f3c0e3bf2ba13ee6ce7f537f50f5d09c" target="_blank" rel="noopener noreferrer">
+                    <span>Solicitar Información</span><small>Ley de Transparencia</small>
+                </a>
+                <a href="#">
+                    <span>Plataforma</span><small>Ley de Lobby</small>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- =========================================
+        ENCABEZADO Y NAVEGACIÓN PRINCIPAL
+    ========================================= -->
+    <header class="site-header">
+
+        <div class="header-container">
+            <div class="logo">
+
+                <a href="index.html">
+                    <img src="logos/munielmonte.png" alt="Logo Municipalidad El Monte" class="main-logo">
+                </a>
+
+            </div>
+
+            <div class="header-right">
+                <nav class="main-nav" aria-label="Navegación principal">
+
+                    <ul>
+
+                        <!-- Inicio -->
+                        <li>
+                            <a href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+
+
+                        <!-- Trámites -->
+                        <li class="nav-item-has-submenu">
+
+                            <a href="tramites.html">
+                                Trámites
+                                <span class="nav-arrow" aria-hidden="true">▼</span>
+                            </a>
+
+                            <ul class="submenu">
+
+                                <li>
+                                    <a href="tramites.html">
+                                        Todos los trámites
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="portal-pagos.html">
+                                        Portal de pagos
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="documentos-permisos.html">
+                                        Documentos, certificados y permisos
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="concursos-publicos.html">
+                                        Concursos públicos
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Municipalidad -->
+                        <li class="nav-item-has-submenu">
+
+                            <a href="municipalidad.html">
+                                Municipalidad
+                                <span class="nav-arrow" aria-hidden="true">▼</span>
+                            </a>
+
+                            <ul class="submenu">
+
+                                <li>
+                                    <a href="municipalidad.html">
+                                        Nuestra Municipalidad
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="alcaldia.html">
+                                        Alcaldía
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="concejo-municipal.html">
+                                        Concejo Municipal
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="municipalidad.html#direcciones">
+                                        Direcciones municipales
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Transparencia -->
+                        <li class="nav-item-has-submenu">
+
+                            <a
+                                href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU084"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                Transparencia
+                                <span class="nav-arrow" aria-hidden="true">▼</span>
+
+                            </a>
+
+                            <ul class="submenu">
+
+                                <li>
+                                    <a
+                                        href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU084"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+
+                                        Transparencia Activa
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="https://www.portaltransparencia.cl/PortalPdT/web/guest/directorio-de-organismos-regulados?p_p_id=pdtorganismos_WAR_pdtorganismosportlet&orgcode=f3c0e3bf2ba13ee6ce7f537f50f5d09c"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+
+                                        Solicitar información
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Ley de Lobby
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Noticias -->
+                        <li class="nav-item-has-submenu">
+
+                            <a href="noticias.html">
+                                Noticias
+                                <span class="nav-arrow" aria-hidden="true">▼</span>
+                            </a>
+
+                            <ul class="submenu">
+
+                                <li>
+                                    <a href="noticias.html#panel-todas">
+                                        Todas las noticias
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="agenda comunal.html">
+                                        Agenda comunal
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="comunicados.html">
+                                        Comunicados
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Contactos -->
+                        <li>
+                            <a
+                                href="contactos.html"
+                                class="active">
+
+                                Contactos
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <a href="tel:+56952171399" class="emergency-btn">
+                    <span>Emergencia Municipal</span>
+                    <strong>+56 9 5217 1399</strong>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="page-contactos">
+        
+        <!-- =========================================
+            HERO PRINCIPAL
+        ========================================== -->
+
+        <section class="main-page-hero">
+
+            <div class="container main-page-hero-content">
+
+                <span class="section-kicker-accent">
+                    ATENCIÓN CIUDADANA
+                </span>
+
+                <h1>
+                    Contacto y oficinas
+                </h1>
+
+                <p>
+                    Encuentra teléfonos, oficinas municipales,
+                    horarios de atención y canales de emergencia
+                    de la Municipalidad de El Monte.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================================
+             PANEL 1: CONTACTO MUNICIPAL (VISTA PRINCIPAL / RESUMEN)
+             ========================================== -->
+
+        <section
+            id="panel-contacto"
+            class="contact-panel active">
+            
+            <section class="section-light">
+                <div class="container">
+                    
+                    <div class="section-header-flex">
+                        <div>
+                            <span class="section-kicker-accent">ATENCIÓN PRESENCIAL</span>
+                            <h2 class="section-title">Información General</h2>
+                            <p class="section-desc">Acércate a nuestro edificio consistorial o envíanos un correo directamente a nuestra oficina de partes.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Info General -->
+                    <div class="grid-3" style="margin-bottom: 64px;">
+
+                        <div class="card" style="text-align: center; padding: 40px 20px;">
+
+                            <div style="font-size: 2.5rem; margin-bottom: 16px;">📍</div>
+                            <h4 style="color: var(--color-primary-dark); font-size: 1.2rem;">Edificio Consistorial</h4>
+                            <p style="color: var(--color-text-muted);">Avenida Los Libertadores 277<br>El Monte, Región Metropolitana</p>
+                        
+                        </div>
+
+                        <div class="card" style="text-align: center; padding: 40px 20px;">
+                            
+                            <div style="font-size: 2.5rem; margin-bottom: 16px;">🕒</div>
+                            <h4 style="color: var(--color-primary-dark); font-size: 1.2rem;">Horario de Atención</h4>
+                            <p>
+                                Lunes a Jueves:<br>
+                                08:30 a 13:30 hrs. y
+                                14:30 a 17:30 hrs.<br>
+
+                                Viernes:<br>
+                                08:30 a 13:30 hrs. y
+                                14:30 a 16:30 hrs.
+                            </p>
+
+                        </div>
+
+                        <div class="card" style="text-align: center; padding: 40px 20px;">
+                            
+                            <div style="font-size: 2.5rem; margin-bottom: 16px;">✉️</div>
+                            <h4 style="color: var(--color-primary-dark); font-size: 1.2rem;">Oficina de Partes</h4>
+                            <p style="color: var(--color-text-muted);">Ingreso de documentos oficiales.<br><strong>partes@munielmonte.cl</strong></p>
+                        
+                        </div>
+
+                    </div>
+
+                    <!-- PREVIEWS DE SUB-SECCIONES -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px;">
+                        
+                        <!-- Miniatura Agenda Telefónica -->
+                        <div class="card" style="border-top: 4px solid var(--color-primary);">
+                            
+                            <span class="section-kicker">CONTACTOS DIRECTOS</span>
+                            <h3 style="font-size: 1.6rem; margin-bottom: 16px;">Agenda Telefónica</h3>
+                            
+                            <div style="display: flex; gap: 16px; align-items: center; background: var(--color-bg-light); padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+                                
+                                <div style="background-color: var(--color-primary); color: white; padding: 12px; border-radius: 8px; text-align: center; min-width: 60px; font-size: 1.5rem;">
+                                    ☎️
+                                </div>
+                                
+                                <div>
+                                    <h4 style="margin: 0; font-size: 1.1rem;">Directorio Municipal</h4>
+                                    <p style="margin: 0; font-size: 0.85rem;">Encuentra el anexo que necesitas</p>                                
+                                </div>
+                            
+                            </div>
+
+                            <a
+                                href="#panel-telefonos"
+                                class="btn btn-primary contact-full-button">
+
+                                Explorar directorio completo
+                            </a>
+
+                        </div>
+
+                        <!-- Miniatura Emergencias -->
+                        <div class="card" style="border-top: 4px solid var(--color-red);">
+                            
+                            <span class="section-kicker-red">ATENCIÓN INMEDIATA</span>
+                            <h3 style="font-size: 1.6rem; margin-bottom: 16px;">Emergencias</h3>
+                            
+                            <div style="display: flex; gap: 16px; align-items: center; background: var(--color-bg-light); padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+                                
+                                <div style="background-color: var(--color-red); color: white; padding: 12px; border-radius: 8px; font-size: 1.5rem; text-align: center; min-width: 60px;">
+                                    🚨
+                                </div>
+                                
+                                <div>
+                                    <h4>
+                                        Contactos de emergencia
+                                    </h4>
+
+                                    <p>
+                                        Ambulancia, Seguridad y atención municipal
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            
+                            <a
+                                href="#panel-emergencias"
+                                class="btn btn-danger contact-full-button">
+
+                                Ver números de emergencia
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Formulario de Contacto -->
+            <section class="section-dark">
+                <div class="container contact-container">
+                    <div class="contact-info">
+                        <span class="section-kicker-accent">MESA DE AYUDA VIRTUAL</span>
+                        <h3 class="section-title text-white">¿No encuentras lo que buscas?</h3>
+                        <p class="text-white-opacity">Si no sabes con qué departamento comunicarte, escríbenos a través del formulario y nuestro equipo de atención derivará tu consulta a la oficina correspondiente.</p>
+                        <ul class="contact-details text-white-opacity">
+                            <li><strong>Mesa Central:</strong> +56 2 2560 9700</li>
+                            <li><strong>Central Secundaria:</strong> +56 2 2560 9701</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <h4 class="form-title text-primary-dark">Envía tu consulta virtual</h4>
+                        <p class="form-desc text-muted">Completa los campos a continuación para que podamos contactarte a la brevedad.</p>
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre completo</label>
+                                    <input type="text" id="nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono (opcional)</label>
+                                <input type="tel" id="telefono">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje o Consulta</label>
+                                <textarea id="mensaje" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar mensaje a la Municipalidad</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- ==========================================
+             PANEL 2: AGENDA TELEFÓNICA (DIRECTORIO)
+             ========================================== -->
+
+        <section
+            id="panel-telefonos"
+            class="contact-panel">
+
+            <section class="section-light">
+                <div class="container">
+                    
+                    <!-- BOTÓN VOLVER -->
+                    <a
+                        href="#panel-contacto"
+                        class="btn-volver">
+
+                        <span aria-hidden="true">←</span>
+                        Volver
+
+                    </a>
+
+                    <div class="section-header-flex">
+                        <div>
+                            <span class="section-kicker">CONTACTOS DIRECTOS</span>
+                            <h2 class="section-title">Agenda Telefónica</h2>
+                            <p class="section-desc">Busca directamente el número de la oficina o departamento que necesitas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Buscador y Horarios -->
+                    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 24px; margin-bottom: 40px; align-items: start;">
+                        <!-- Buscador -->
+                        <div class="filter-bar" style="margin-bottom: 0;">
+                            <div class="search-input" style="width: 100%;">
+                                <label for="search-contact">Buscar Oficina</label>
+                                <input type="text" id="search-contact" placeholder="Ej. DIDECO, Obras, Patentes..." style="width: 100%;">
+                            </div>
+                        </div>
+
+                        <!-- Horario General -->
+                        <div class="card" style="background-color: #f8fafc; border: 1px solid #d1d9e0; box-shadow: none; padding: 24px;">
+                            <div style="display: flex; gap: 16px; align-items: flex-start;">
+                                <div style="font-size: 2rem;">🕒</div>
+                                <div>
+                                    <h4 style="margin-bottom: 8px; color: var(--color-primary-dark);">Horario de Atención General</h4>
+                                    <p style="margin: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                        <strong>Lunes a Jueves:</strong> 08:30 a 13:30 hrs. y 14:30 a 17:30 hrs.<br>
+                                        <strong>Viernes:</strong> 08:30 a 13:30 hrs. y 14:30 a 16:30 hrs.<br>
+                                        <small style="display: block; margin-top: 4px; color: var(--color-red);">* Salud, Juzgado y Emergencias tienen horarios especiales.</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grilla de Directorio -->
+                    <div class="grid-3" id="directory-grid">
+                        
+                        <!-- Tarjeta: Atención General y Administración -->
+                        <div class="card directory-card" style="border-top: 4px solid var(--color-primary);">
+                            <span class="card-kicker">INFORMACIÓN CENTRAL</span>
+                            <h4 style="font-size: 1.3rem; margin-bottom: 16px;">Atención General y Alcaldía</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 700; color: var(--color-primary-dark); font-size: 0.9rem;">Mesa Central</span>
+                                    <a href="tel:+56225609700" style="color: var(--color-primary); font-weight: 700;">2 2560 9700</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 700; color: var(--color-primary-dark); font-size: 0.9rem;">Oficina de Partes</span>
+                                    <a href="tel:+56225609701" style="color: var(--color-primary); font-weight: 700;">2 2560 9701</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Alcaldía</span>
+                                    <a href="tel:+56225609702" style="color: var(--color-primary); font-weight: 700;">2 2560 9702</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Secretario Municipal</span>
+                                    <a href="tel:+56225609721" style="color: var(--color-primary); font-weight: 700;">2 2560 9721</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Tesorería Municipal</span>
+                                    <a href="tel:+56225609726" style="color: var(--color-primary); font-weight: 700;">2 2560 9726</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Jurídico</span>
+                                    <a href="tel:+56225609745" style="color: var(--color-primary); font-weight: 700;">2 2560 9745</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Tarjeta: Tránsito y Obras -->
+                        <div class="card directory-card" style="border-top: 4px solid var(--color-accent);">
+                            <span class="card-kicker">DOM Y VIALIDAD</span>
+                            <h4 style="font-size: 1.3rem; margin-bottom: 16px;">Tránsito y Obras</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Dirección de Obras</span>
+                                    <a href="tel:+56225609723" style="color: var(--color-primary); font-weight: 700;">2 2560 9723</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Permisos de Circulación</span>
+                                    <a href="tel:+56225609771" style="color: var(--color-primary); font-weight: 700;">2 2560 9771</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Licencias de Conducir</span>
+                                    <a href="tel:+56225609773" style="color: var(--color-primary); font-weight: 700;">2 2560 9773</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Aseo y Ornato</span>
+                                    <a href="tel:+56225609791" style="color: var(--color-primary); font-weight: 700;">2 2560 9791</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Tarjeta: Desarrollo Social DIDECO -->
+                        <div class="card directory-card" style="border-top: 4px solid var(--color-primary);">
+                            <span class="card-kicker">APOYO COMUNITARIO</span>
+                            <h4 style="font-size: 1.3rem; margin-bottom: 16px;">DIDECO y Social</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 700; color: var(--color-primary-dark); font-size: 0.9rem;">DIDECO Central</span>
+                                    <a href="tel:+56225609757" style="color: var(--color-primary); font-weight: 700;">2 2560 9757</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Asistente Social</span>
+                                    <a href="tel:+56225609775" style="color: var(--color-primary); font-weight: 700;">2 2560 9775</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Registro Social (Ficha)</span>
+                                    <a href="tel:+56225609756" style="color: var(--color-primary); font-weight: 700;">2 2560 9756</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Subsidios Sociales</span>
+                                    <a href="tel:+56225609758" style="color: var(--color-primary); font-weight: 700;">2 2560 9758</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Oficina Adulto Mayor</span>
+                                    <a href="tel:+56225609763" style="color: var(--color-primary); font-weight: 700;">2 2560 9763</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Oficina Discapacidad</span>
+                                    <a href="tel:+56225609764" style="color: var(--color-primary); font-weight: 700;">2 2560 9764</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Tarjeta: Desarrollo, Patentes y Trabajo -->
+                        <div class="card directory-card" style="border-top: 4px solid var(--color-accent);">
+                            <span class="card-kicker">ECONOMÍA LOCAL</span>
+                            <h4 style="font-size: 1.3rem; margin-bottom: 16px;">Patentes y Fomento</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Rentas y Patentes</span>
+                                    <a href="tel:+56443049384" style="color: var(--color-primary); font-weight: 700;">4 4304 9384</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Fomento Productivo</span>
+                                    <a href="tel:+56443049383" style="color: var(--color-primary); font-weight: 700;">4 4304 9383</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Oficina OMIL (Empleo)</span>
+                                    <a href="tel:+56443049386" style="color: var(--color-primary); font-weight: 700;">4 4304 9386</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Turismo</span>
+                                    <a href="tel:+56443049388" style="color: var(--color-primary); font-weight: 700;">4 4304 9388</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Prodesal</span>
+                                    <a href="tel:+56443049380" style="color: var(--color-primary); font-weight: 700;">4 4304 9380</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Tarjeta: Salud -->
+                        <div class="card directory-card" style="border-top: 4px solid var(--color-primary);">
+                            <span class="card-kicker">CENTROS MÉDICOS</span>
+                            <h4 style="font-size: 1.3rem; margin-bottom: 16px;">Salud Municipal</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li class="contact-item" style="display: flex; flex-direction: column; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <div style="display: flex; justify-content: space-between; width: 100%;">
+                                        <span style="font-weight: 700; color: var(--color-primary-dark); font-size: 0.9rem;">SOME CESFAM</span>
+                                        <a href="tel:+56225743108" style="color: var(--color-primary); font-weight: 700;">2 2574 3108</a>
+                                    </div>
+                                    <small style="color: var(--color-text-muted);">Lun-Jue: 08:00 a 17:00 / Vie: 08:00 a 16:00</small>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">OIRS CESFAM</span>
+                                    <a href="tel:+56225743106" style="color: var(--color-primary); font-weight: 700;">2 2574 3106</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">CECOSF Lo Chacón</span>
+                                    <a href="tel:+56225688072" style="color: var(--color-primary); font-weight: 700;">2 2568 8072</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">SOME El Paico</span>
+                                    <a href="tel:+56226124722" style="color: var(--color-primary); font-weight: 700;">2 2612 4722</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Tarjeta: Programas Sociales y Familias -->
+                        <div class="card directory-card" style="border-top: 4px solid var(--color-accent);">
+                            <span class="card-kicker">DESARROLLO FAMILIAR</span>
+                            <h4 style="font-size: 1.3rem; margin-bottom: 16px;">Programas y Familias</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Centro de la Mujer</span>
+                                    <a href="tel:+56225609782" style="color: var(--color-primary); font-weight: 700;">2 2560 9782</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Mujeres Jefas de Hogar</span>
+                                    <a href="tel:+56443049387" style="color: var(--color-primary); font-weight: 700;">4 4304 9387</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Programa Senda</span>
+                                    <a href="tel:+56225609783" style="color: var(--color-primary); font-weight: 700;">2 2560 9783</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">OPD</span>
+                                    <a href="tel:+56225609780" style="color: var(--color-primary); font-weight: 700;">2 2560 9780</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Programa Puente</span>
+                                    <a href="tel:+56225609759" style="color: var(--color-primary); font-weight: 700;">2 2560 9759</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Tarjeta: Educación, Cultura y Otros -->
+                        <div class="card directory-card" style="border-top: 4px solid var(--color-primary);">
+                            <span class="card-kicker">SERVICIOS VARIOS</span>
+                            <h4 style="font-size: 1.3rem; margin-bottom: 16px;">Educación, Cultura y Otros</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li class="contact-item" style="display: flex; flex-direction: column; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <div style="display: flex; justify-content: space-between; width: 100%;">
+                                        <span style="font-weight: 700; color: var(--color-primary-dark); font-size: 0.9rem;">Juzgado Policía Local</span>
+                                        <a href="tel:+56443570327" style="color: var(--color-primary); font-weight: 700;">4 4357 0327</a>
+                                    </div>
+                                    <small style="color: var(--color-text-muted);">Lunes a Viernes: 09:00 a 13:00 hrs.</small>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Depto. Educación DAEM</span>
+                                    <a href="tel:+56228181558" style="color: var(--color-primary); font-weight: 700;">2 2818 1558</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Biblioteca Municipal</span>
+                                    <a href="tel:+56225609750" style="color: var(--color-primary); font-weight: 700;">2 2560 9750</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e3e8ed; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Teatro Carrera</span>
+                                    <a href="tel:+56225609717" style="color: var(--color-primary); font-weight: 700;">2 2560 9717</a>
+                                </li>
+                                <li class="contact-item" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--color-text); font-size: 0.9rem;">Cementerio Municipal</span>
+                                    <a href="tel:+56956275523" style="color: var(--color-primary); font-weight: 700;">9 5627 5523</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- ==========================================
+             PANEL 3: EMERGENCIAS (VISTA AISLADA)
+             ========================================== -->
+
+        <section
+            id="panel-emergencias"
+            class="contact-panel">
+
+            <section class="section-light" style="background-color: #fff2f2;">
+                <div class="container">
+                    
+                    <!-- BOTÓN VOLVER -->
+                    <a
+                        href="#panel-contacto"
+                        class="btn-volver">
+
+                        <span aria-hidden="true">←</span>
+                        Volver
+
+                    </a>
+
+                    <div class="section-header-flex">
+
+                        <div>
+                            <span class="section-kicker-red">
+                                CONTACTOS PRIORITARIOS
+                            </span>
+
+                            <h2 class="section-title contact-emergency-title">
+                                Teléfonos de emergencia
+                            </h2>
+
+                            <p class="section-desc">
+                                Revisa los principales canales de atención
+                                ante situaciones urgentes y considera el
+                                horario indicado para cada servicio.
+                            </p>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="grid-3" style="margin-top: 40px;">
+                        
+                        <!-- Ambulancia -->
+                        <div class="card" style="border-top: 6px solid var(--color-red); text-align: center; padding: 48px 24px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <div style="font-size: 4rem; margin-bottom: 16px; line-height: 1;">🚑</div>
+                            <h3 style="font-size: 1.6rem; color: var(--color-primary-dark);">Ambulancia CESFAM</h3>
+                            <a href="tel:+56225743115" style="display: block; font-size: 2.2rem; color: var(--color-red); font-weight: 700; margin: 16px 0;">2 2574 3115</a>
+                            <p style="margin: 0; color: var(--color-text-muted); font-size: 1.05rem;">Atención de urgencias médicas las 24 horas del día.</p>
+                        </div>
+
+                        <!-- Emergencia Municipal -->
+                        <div class="card" style="border-top: 6px solid var(--color-accent); text-align: center; padding: 48px 24px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <div style="font-size: 4rem; margin-bottom: 16px; line-height: 1;">🚨</div>
+                            <h3 style="font-size: 1.6rem; color: var(--color-primary-dark);">Emergencia Municipal</h3>
+                            <a href="tel:+56225609787" style="display: block; font-size: 2.2rem; color: var(--color-primary-dark); font-weight: 700; margin: 16px 0;">2 2560 9787</a>
+                            <p style="margin: 0; color: var(--color-text-muted); font-size: 1.05rem;">Atención de apoyo frente a situaciones de riesgo comunal.</p>
+                        </div>
+
+                        <!-- Seguridad Ciudadana -->
+                        <div class="card" style="border-top: 6px solid var(--color-primary); text-align: center; padding: 48px 24px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <div style="font-size: 4rem; margin-bottom: 16px; line-height: 1;">🚔</div>
+                            <h3 style="font-size: 1.6rem; color: var(--color-primary-dark);">Seguridad Ciudadana</h3>
+                            <a href="tel:+56225609765" style="display: block; font-size: 2.2rem; color: var(--color-primary); font-weight: 700; margin: 16px 0;">2 2560 9765</a>
+                            <p style="margin: 0; color: var(--color-text-muted); font-size: 1.05rem;">Programa municipal de prevención del delito y patrullaje.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <!-- =========================================
+        FOOTER
+    ========================================= -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h5>Ilustre Municipalidad de El Monte</h5>
+                <p class="footer-address">Avenida Los Libertadores 277, Santiago</p>
+                <p class="footer-copy">© 2026 El Monte, Chile. Todos los derechos reservados.</p>
+            </div>
+            <nav class="footer-nav" aria-label="Navegación del pie de página">
+                <ul>
+                    <li><a href="index.html">Volver al inicio</a></li>
+                    <li><a href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU084" target="_blank" rel="noopener noreferrer">Portal de Transparencia</a></li>
+                    <li><a href="contactos.html">Contacto y Oficinas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- JavaScript general -->
+    <script src="script.js"></script>
+
+</body>
+</html>
